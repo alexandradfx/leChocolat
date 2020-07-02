@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -14,31 +12,73 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
-                            Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
-                                class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./menu.html"><span
-                                class="fa fa-list fa-lg"></span>
-                            Menu</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
-                                class="fa fa-address-card fa-lg"></span>
-                            Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">
+                            <span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">
+                            <span class="fa fa-info fa-lg"> </span> About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./menu.html">
+                            <span class="fa fa-list fa-lg"> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html">
+                            <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
-
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email
+                                address
+                            </label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">
+                                Password
+                            </label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -63,9 +103,91 @@
         <div class="row">
             <div class="col-12">
                 <h3>Menu</h3>
-                <h4>Under heavy constraction!!</h4>
-                <hr>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col align-self-center">
+            <div class=" media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/a.jpeg" alt="Caramel chocolate">
+                <div class="media-body">
+                    <h4 class="mt-0">Caramel filled chocolate<br>
+                        <span class="badge badge-danger">NEW</span>
+                        <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$1.99</a>
+                    </h4>
+                    <p class="col d-none d-md-block">Milk chocolate with caramel filling.<br>100g</p>
+                </div>
+            </div>
+            <br>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/b.jpeg" alt="Chocolate bars">
+                <div class="media-body">
+                    <h4 class="mt-0">Chocolate bars</h4>
+                    <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$1.69</a>
+                    <p class="col d-none d-md-block">Chocolate bars with coconut/chocolate/caramel/vanilla
+                        cream.<br>4x45g</p>
+                </div>
+            </div>
+            <br>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/c.jpeg"
+                    alt="Dried fruit chocolate">
+                <div class="media-body">
+                    <h4 class="mt-0">Dark chocolate with dried fruits</h4>
+                    <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$1.79</a>
+                    <p class="col d-none d-md-block">70% dark chocolate with dried red fruits.<br>100g</p>
+                </div>
+            </div>
+            <br>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/d.jpeg" alt="Strawberry chocolate">
+                <div class="media-body">
+                    <h4 class="mt-0">Pink chocolate</h4>
+                    <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$1.59</a>
+                    <p class="col d-none d-md-block">Pink chocolate made with strawberries.<br>65g</p>
+                </div>
+            </div>
+            <br>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/e.jpeg" alt="Dark chocolate">
+                <div class="media-body">
+                    <h4 class="mt-0">85% dark chocolate</h4>
+                    <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$0.99</a>
+                    <p class="col d-none d-md-block">Dark chocolate with no added sugar. Here you can taste the flavor
+                        of cocoa beans.<br>120g</p>
+                </div>
+            </div>
+            <br>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/f.jpeg" alt="Milk chocolate">
+                <div class="media-body">
+                    <h4 class="mt-0">Milk chocolate</h4>
+                    <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$0.99</a>
+                    <p class="col d-none d-md-block">The all time classic milk chocolate.<br>120g</p>
+                </div>
+            </div>
+            <br>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/g.jpeg"
+                    alt="Dark, white, milk chocolate">
+                <div class="media-body">
+                    <h4 class="mt-0">Trois of our classic chocolates</h4>
+                    <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$2.29</a>
+                    <p class="col d-none d-md-block">Our classic chocolates in one package.<br>3x120g</p>
+                </div>
+            </div>
+            <br>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/promotion.jpg" alt="Promo pack">
+                <div class="media-body">
+                    <h4 class="mt-0">Our basket<br>
+                        <span class="badge badge-danger">WEEK'S OFFER</span>
+                        <a href="./menu.html" role="button" class="btn btn-outline-success btn-sm">$6.99</a>
+                    </h4>
+                    <p class="col d-none d-md-block">This week we offer a basket with 10 delicious chocolates!</p>
+                </div>
+            </div>
+            <br>
         </div>
     </div>
     <footer class="footer">
@@ -116,6 +238,11 @@
             </div>
         </div>
     </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

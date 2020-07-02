@@ -64,3 +64,9 @@ tr:hover {
 #carouselButtons {
   z-index: +1;
 }
+head {
+  font-family: "Proxima Nova Rg";
+}
+body {
+  font-family: "Proxima Nova Rg";
+}
